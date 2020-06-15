@@ -6,4 +6,5 @@ if [ -z "$INPUT_SOURCE" ]; then
   exit 1
 fi
 #az storage blob sync --source ${INPUT_SOURCE} -c '$web' --connection-string "${INPUT_CONNECTION_STRING}"
-az storage blob sync --source ${INPUT_SOURCE} -c '$web' --connection-string "${INPUT_CONNECTION_STRING}" --debug
+ls -la
+az storage blob sync --source ${INPUT_SOURCE} -c '$web' --connection-string "${INPUT_CONNECTION_STRING}"
